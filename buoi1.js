@@ -50,3 +50,12 @@
 //4 : Truy vấn vào giá trị không tồn tại
 // var a = {name : "Phát"}
 // console.log(a.age)
+// 4 : if else
+var a = 5
+var b = 6
+// 6 trường hợp false : 0 , null ,undefined , NaN , false , ""
+if(a = -1){
+    console.log("Đúng")
+}else{
+    console.log("Sai")
+}
