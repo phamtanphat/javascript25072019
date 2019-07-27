@@ -38,7 +38,15 @@
 // console.log(a)
 //undefined
 //1 : Tạo ra 1 biến mà không cấp giá trị
-var a
+// var a
 //2 : function không có câu lệnh return
-function show(){}
-console.log(show())
+// function show(){
+
+// }
+//3 : Function chỉ có chữ return
+// function show(){
+//     return
+// }
+//4 : Truy vấn vào giá trị không tồn tại
+// var a = {name : "Phát"}
+// console.log(a.age)
