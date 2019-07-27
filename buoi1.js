@@ -16,15 +16,24 @@
 // var a = 5 + 6 //(Biểu thức)
 // var b = a++ //(Biểu thức)
 // var c = (a > b) ? a : b //(Toán tử 3 ngôi)
-var a = 5
-var b = 6
-var c = ++a + b++ - a++ + b-- + a++ + b--
+// var a = 5
+// var b = 6
+// var c = ++a + b++ - a++ + b-- + a++ + b--
 //6 + b++ - a++ + b-- + a++ + b-- : a = 6 
 // 6 + 6 - a++ + b-- + a++ + b-- : a = 6 , b = 7
 // 6 + 6 - 6 + b-- + a++ + b-- : a = 7 , b = 7
 //6 + 6 - 6 + 7 + a++ + b-- : a = 7 , b = 6
 //6 + 6 - 6 + 7 + 7 + b-- : a = 8 , b = 6
 //6 + 6 - 6 + 7 + 7 + 6 = 26
-console.log(c)
-
+// console.log(c)
+// var a = 5
+// a  += 2
+// console.log(a)
+// 3 : Kiểu dữ liệu null , NaN , undefined
+//null : cố tình gán giá trị là null
+// var a = null
+// console.log(a)
+//NaN : not a number : biểu thức có xuất hiện undefined
+var a = undefined + "" //Th đặc biệt : Phép nối chuỗi
+console.log(a)
 
