@@ -34,6 +34,11 @@
 // var a = null
 // console.log(a)
 //NaN : not a number : biểu thức có xuất hiện undefined
-var a = undefined + "" //Th đặc biệt : Phép nối chuỗi
-console.log(a)
-
+// var a = undefined + "" //Th đặc biệt : Phép nối chuỗi
+// console.log(a)
+//undefined
+//1 : Tạo ra 1 biến mà không cấp giá trị
+var a
+//2 : function không có câu lệnh return
+function show(){}
+console.log(show())
