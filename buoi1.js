@@ -102,9 +102,52 @@
 //     console.log(numbers[index])
 //     index++
 // }
-let numbers = [1,2,3,4,5]
+// let numbers = [1,2,3,4,5]
 // numbers.push(10)
 // numbers.pop()
 // numbers.shift()
-numbers.unshift(0)
-console.log(numbers)
+// numbers.unshift(0)
+// console.log(numbers)
+// 1 - 100 
+// + In số chẳn
+// + In số lẻ
+// + In số chia 3 dư 1
+// + In số chính phương
+// for(let i = 1 ; i <= 100 ; i++){
+//     if(i % 2 === 0) console.log(i)
+// }
+// for(let i = 1 ; i <= 100 ; i++){
+//     if(i % 2 === 1) console.log(i)
+// }
+// for(let i = 1 ; i <= 100 ; i++){
+//     if(i % 3 === 1) console.log(i)
+// }
+
+// 1 : function nhan tham so 1 function
+// function xulybaitoan(fn){
+//     fn()
+// }
+// 2 : Function nhan function return function
+//console.log()
+// xulybaitoan(console.log())
+// function xulybaitoan(fn){
+//     return fn(1)
+// }
+// xulybaitoan(console.log)
+// for(let i = 1 ; i <= 100 ; i++){
+//     if(Math.sqrt(value) % 1 == 0) return 
+// }
+// function xulybaitoan(fn){
+//     for(let i = 1 ; i <= 100 ; i++){
+//         const dk = fn(i) == true
+//         if(dk) console.log(i)
+//     }
+// }
+// xulybaitoan(function(value){
+//     if(Math.sqrt(value) % 1 == 0) return true
+// })
+let mang = [1,2,3,4,5,6,7,8,9,10]
+let mangmoi = mang.map(function(value){
+    return value * 2
+})
+console.log(mangmoi)
