@@ -93,7 +93,18 @@
 // function a(){}
 // console.log(typeof a)
 // for in : duyệt key
+// let numbers = [1,2,3,4,5]
+// for(let value in numbers){
+//     console.log(value)
+// }
+// let index = 0
+// while(index < numbers.length){
+//     console.log(numbers[index])
+//     index++
+// }
 let numbers = [1,2,3,4,5]
-for(let value in numbers){
-    console.log(value)
-}
+// numbers.push(10)
+// numbers.pop()
+// numbers.shift()
+numbers.unshift(0)
+console.log(numbers)
