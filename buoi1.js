@@ -51,11 +51,20 @@
 // var a = {name : "Phát"}
 // console.log(a.age)
 // 4 : if else
-var a = 5
-var b = 6
+// var a = 5
+// var b = 6
 // 6 trường hợp false : 0 , null ,undefined , NaN , false , ""
-if(a = -1){
-    console.log("Đúng")
-}else{
-    console.log("Sai")
+// if(a = -1){
+//     console.log("Đúng")
+// }else{
+//     console.log("Sai")
+// }
+let a = true
+switch(a){
+    case true : console.log("đây là true")
+        return
+    case false : console.log("đây là false")
+        return
+    default : console.log("Không có giá trị")
+        return
 }
