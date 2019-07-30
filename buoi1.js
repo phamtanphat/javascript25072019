@@ -59,12 +59,19 @@
 // }else{
 //     console.log("Sai")
 // }
-let a = true
-switch(a){
-    case true : console.log("đây là true")
-        return
-    case false : console.log("đây là false")
-        return
-    default : console.log("Không có giá trị")
-        return
+// let a = true
+// switch(a){
+//     case true : console.log("đây là true")
+//         return
+//     case false : console.log("đây là false")
+//         return
+//     default : console.log("Không có giá trị")
+//         return
+// }
+// Mảng : 
+let numbers = [1,3,5,7,9,11]
+// for
+let i = 0
+for( ; i < numbers.length ; i++){
+    console.log(numbers[i]);
 }
