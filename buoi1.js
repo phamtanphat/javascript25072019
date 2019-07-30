@@ -89,5 +89,11 @@
 // }
 // Phương thức check type data
 // typeof
-let a = NaN
-console.log(typeof a)
+// let a = 10
+// function a(){}
+// console.log(typeof a)
+// for in : duyệt key
+let numbers = [1,2,3,4,5]
+for(let value in numbers){
+    console.log(value)
+}
