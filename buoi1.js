@@ -69,9 +69,25 @@
 //         return
 // }
 // Mảng : 
-let numbers = [1,3,5,7,9,11]
+// let numbers = [1,3,5,7,9,11]
 // for
-let i = 0
-for( ; i < numbers.length ; i++){
-    console.log(numbers[i]);
-}
+// let i = 0
+// for( ; i < numbers.length ; i++){
+//     console.log(numbers[i]);
+// }
+// for(let number of numbers){
+//     if(number === 5) return
+//     console.log(number)
+// }
+// so sánh
+// let a = "505"
+// let b = "505"  
+// if(a == b){
+//     console.log("Bằng nhau")
+// }else{
+//     console.log("Khác nhau")
+// }
+// Phương thức check type data
+// typeof
+let a = NaN
+console.log(typeof a)
