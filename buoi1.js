@@ -146,8 +146,17 @@
 // xulybaitoan(function(value){
 //     if(Math.sqrt(value) % 1 == 0) return true
 // })
-let mang = [1,2,3,4,5,6,7,8,9,10]
-let mangmoi = mang.map(function(value){
-    return value * 2
-})
-console.log(mangmoi)
+// let mang = [1,2,3,4,5,6,7,8,9,10]
+// let mangmoi = mang.map(function(value){
+//     return value * 2
+// })
+// console.log(mangmoi)
+function sumElement(array){
+    let tong = 0;
+    for(let value of array){
+        tong += value
+    }
+    return tong
+}
+arraynumber = [1,2,3,4,5]
+console.log(sumElement(arraynumber))
