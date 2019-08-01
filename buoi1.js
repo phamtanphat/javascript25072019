@@ -151,12 +151,53 @@
 //     return value * 2
 // })
 // console.log(mangmoi)
-function sumElement(array){
-    let tong = 0;
-    for(let value of array){
-        tong += value
+// function sumElement(array){
+//     let tong = 0;
+//     for(let value of array){
+//         tong += value
+//     }
+//     return tong
+// }
+// arraynumber = [1,2,3,4,5]
+// console.log(sumElement(arraynumber))
+const persons = [
+    {
+      name: "Angelina Jolie",
+      age: 80
+    },
+    {
+      name: "Eric Jones",
+      age: 2
+    },
+    {
+      name: "Paris Hilton",
+      age: 5
+    },
+    {
+      name: "Kayne West",
+      age: 16
+    },
+    {
+      name: "Bob Ziroll",
+      age: 100
     }
-    return tong
+]
+function getAllName(array){
+    let arrayname = array.map(function(person){
+        return person.name
+    })
+    return arrayname
 }
-arraynumber = [1,2,3,4,5]
-console.log(sumElement(arraynumber))
+function average(array){
+    let arrayage = array.map(function(person){
+        return person.age
+    })
+    let sumage = 0
+    for(let value of arrayage){
+        sumage += value
+    }
+    return sumage / array.length
+}
+// console.log(getAllName(persons))
+console.log(average(persons));
+  
