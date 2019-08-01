@@ -37,15 +37,24 @@
 // })
 // console.log(sumage)
 
-Array.prototype.mymap = function(fn){
+// Array.prototype.mymap = function(fn){
+//     let newArray = []
+//     for(let i = 0 ; i < this.length ; i++){
+//         const value = fn(this[i])
+//         newArray.push(value)
+//     }
+//     return newArray
+// }
+Array.prototype.myfilter = function(fn){
     let newArray = []
     for(let i = 0 ; i < this.length ; i++){
         const value = fn(this[i])
-        newArray.push(value)
+        if(value == true) newArray.push(this[i])
     }
     return newArray
 }
 const numbers = [1,2,3,4,5,6,7,8,9,10]
-console.log(numbers.mymap(function(number){
-    return number
+console.log(numbers.myfilter(function(number){
+    if(number > 5) return true
+    return false
 }))
