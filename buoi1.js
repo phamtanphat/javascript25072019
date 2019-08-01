@@ -160,44 +160,45 @@
 // }
 // arraynumber = [1,2,3,4,5]
 // console.log(sumElement(arraynumber))
-const persons = [
-    {
-      name: "Angelina Jolie",
-      age: 80
-    },
-    {
-      name: "Eric Jones",
-      age: 2
-    },
-    {
-      name: "Paris Hilton",
-      age: 5
-    },
-    {
-      name: "Kayne West",
-      age: 16
-    },
-    {
-      name: "Bob Ziroll",
-      age: 100
-    }
-]
-function getAllName(array){
-    let arrayname = array.map(function(person){
-        return person.name
-    })
-    return arrayname
-}
-function average(array){
-    let arrayage = array.map(function(person){
-        return person.age
-    })
-    let sumage = 0
-    for(let value of arrayage){
-        sumage += value
-    }
-    return sumage / array.length
-}
-// console.log(getAllName(persons))
-console.log(average(persons));
+// const persons = [
+//     {
+//       name: "Angelina Jolie",
+//       age: 80
+//     },
+//     {
+//       name: "Eric Jones",
+//       age: 2
+//     },
+//     {
+//       name: "Paris Hilton",
+//       age: 5
+//     },
+//     {
+//       name: "Kayne West",
+//       age: 16
+//     },
+//     {
+//       name: "Bob Ziroll",
+//       age: 100
+//     }
+// ]
+// function getAllName(array){
+//     let arrayname = array.map(function(person){
+//         return person.name
+//     })
+//     return arrayname
+// }
+// function average(array){
+//     let arrayage = array.map(function(person){
+//         return person.age
+//     })
+//     let sumage = 0
+//     for(let value of arrayage){
+//         sumage += value
+//     }
+//     //array.length (Kích thước)
+//     return sumage / array.length
+// }
+// // console.log(getAllName(persons))
+// console.log(average(persons));
   
