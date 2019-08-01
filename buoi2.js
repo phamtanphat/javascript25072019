@@ -45,16 +45,25 @@
 //     }
 //     return newArray
 // }
-Array.prototype.myfilter = function(fn){
-    let newArray = []
-    for(let i = 0 ; i < this.length ; i++){
-        const value = fn(this[i])
-        if(value == true) newArray.push(this[i])
-    }
-    return newArray
+// Array.prototype.myfilter = function(fn){
+//     let newArray = []
+//     for(let i = 0 ; i < this.length ; i++){
+//         const value = fn(this[i])
+//         if(value == true) newArray.push(this[i])
+//     }
+//     return newArray
+// }
+// const numbers = [1,2,3,4,5,6,7,8,9,10]
+// console.log(numbers.myfilter(function(number){
+//     if(number > 5) return true
+//     return false
+// }))
+//1 : Object
+// const person1 = {name : "Nguyen Van A" , age : 20}
+// 2 : functional
+function Person(Name , Age){
+    this.name = Name
+    this.age = Age
 }
-const numbers = [1,2,3,4,5,6,7,8,9,10]
-console.log(numbers.myfilter(function(number){
-    if(number > 5) return true
-    return false
-}))
+const teo = new Person("Teo",10)
+console.log(teo.age)
