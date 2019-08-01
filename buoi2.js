@@ -24,15 +24,28 @@
 //         return a + b
 // })
 // console.log(tong)
-const animals = [
-    {name : "Mèo" , age : 10},
-    {name : "Chó" , age : 15},
-    {name : "Thỏ" , age : 20},
-]
-const arrayAge = animals.map(function(animal){
-    return animal.age
-})
-const sumage = arrayAge.reduce(function(a,b){
-    return a + b
-})
-console.log(sumage)
+// const animals = [
+//     {name : "Mèo" , age : 10},
+//     {name : "Chó" , age : 15},
+//     {name : "Thỏ" , age : 20},
+// ]
+// const arrayAge = animals.map(function(animal){
+//     return animal.age
+// })
+// const sumage = arrayAge.reduce(function(a,b){
+//     return a + b
+// })
+// console.log(sumage)
+
+Array.prototype.mymap = function(fn){
+    let newArray = []
+    for(let i = 0 ; i < this.length ; i++){
+        const value = fn(this[i])
+        newArray.push(value)
+    }
+    return newArray
+}
+const numbers = [1,2,3,4,5,6,7,8,9,10]
+console.log(numbers.mymap(function(number){
+    return number
+}))
